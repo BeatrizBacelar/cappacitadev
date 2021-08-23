@@ -43,7 +43,7 @@ app.post('/batalha', (req,res) => {
     res.send(database.batalhaPokemon(req.body.id1, req.body.id2))
 })
 
-app.post('/cura', (req,res) => {
+app.post('/cura/:id', (req,res) => {
     res.send(database.curarPokemon(req.params.id))
 })
 
